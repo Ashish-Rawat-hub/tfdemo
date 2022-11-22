@@ -37,7 +37,7 @@ resource "azurerm_resource_group" "example" {
 resource "azurerm_servicebus_namespace" "example" {
   name                = "demo-servicebus-namespace1181"
   location            = "West Europe"
-  resource_group_name = "example-resources"
+  resource_group_name = azurerm_resource_group.example.name
   sku                 = "Standard"
 
   tags = {
