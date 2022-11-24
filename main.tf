@@ -49,5 +49,5 @@ resource "azurerm_servicebus_queue" "example" {
   name         = "demo_servicebus_queue"
   namespace_id = azurerm_servicebus_namespace.example.id
 
-  enable_partitioning = true
+  enable_partitioning = true 
 }
